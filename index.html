@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Crohn's Companion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>CROHN'S COMPANION</h1>
+  </header>
+
+  <main class="shell">
+    <!-- Left: New Entry form -->
+    <section class="panel panel--left" aria-labelledby="newEntryTitle">
+      <h2 id="newEntryTitle" class="panel__title">New Entry</h2>
+
+      <form class="form" autocomplete="off">
+        <div class="field">
+          <label for="date">date:</label>
+          <input id="date" name="date" type="date" placeholder="YYYY-MM-DD" />
+        </div>
+
+        <div class="field">
+          <label for="symptom">symptom:</label>
+          <input id="symptom" name="symptom" type="text" placeholder="e.g., abdominal pain" />
+        </div>
+
+        <div class="field">
+          <label for="pain">pain:</label>
+          <input id="pain" name="pain" type="number" min="0" max="10" step="1" placeholder="0–10" />
+        </div>
+
+        <div class="field">
+          <label for="foods">foods:</label>
+          <input id="foods" name="foods" type="text" placeholder="e.g., rice, chicken" />
+        </div>
+
+        <div class="field">
+          <label for="notes">note:</label>
+          <textarea id="notes" name="notes" placeholder="type here"></textarea>
+        </div>
+
+        <div class="actions">
+          <button class="btn btn--primary" type="button">SAVE</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Right: Previous Entry list -->
+    <section class="panel panel--right" aria-labelledby="prevEntryTitle">
+      <h2 id="prevEntryTitle" class="panel__title">Previous Entry</h2>
+
+      <div class="list">
+        <!-- Placeholder cards to show the look -->
+        <article class="card"></article>
+        <article class="card"></article>
+        <article class="card"></article>
+        <article class="card"></article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
